@@ -7,11 +7,14 @@
 html{
    scroll-behavior:smooth; 
 }
+body{
+    background-color:#F5F5F5;
+}
 :root{
     --container-lg:85%;
     --container-md:90%;
     --container-sm:95%;
-    --color-primary:rgba(84, 44, 214, 0.74);
+    --color-primary:#596CCE;
 }
 .btn{
     padding:0.5rem 1.2rem;
@@ -51,7 +54,7 @@ a{
     padding: 0.5rem;
 }
 .links:active{
-    color: blue;
+    color: #596CCE;
 }
 .list{
     list-style-type:none;
@@ -69,6 +72,7 @@ a{
     display: block;
 }
 .home{
+    
     display: flex;
     margin-top: 1rem;
 }
@@ -115,7 +119,46 @@ a{
     z-index: 0;
     /* opacity: 1; */
 }
+/* ====================SERVICE================= */
+.service{
+    margin: 2rem;
+}
+.inner_service_container{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.inner_service_container article{
+    width: 20%;
+    box-shadow: 1px 1px 1px 2px gray;
+    background-color: whitesmoke;
+    border-radius: 4px;
+    padding: 0.5rem;
+    border-bottom: 4px solid var(--color-primary);
+    cursor: pointer;
+}
+.inner_service_container article:hover{
+    background-color: var(--color-primary);
+    border-bottom: 4px solid whitesmoke;
+}
+.service_text{
+    text-align: center;
+    margin: 2rem;
+}
+.inner_service_container article h3{
+    padding: 0.3rem;
+}
+.inner_service_container article p{
+    padding: 0.3rem;
+}
+.activearticle{
+    background-color: var(--color-primary);
+}
 @media screen and (max-width:1024px) {
+    .inner_service_container article{
+        width: 30%;
+     }
     .home_img{
         width: 400px;
         height: 400px;
@@ -143,12 +186,20 @@ a{
      .left_home{
         width: 100%;
      }
+     .inner_service_container {
+        flex-wrap: wrap;
+     }
+     .inner_service_container article{
+        width: 40%;
+     }
 }
 @media screen and (max-width:540px) {
  .hambuger_container{
     display: block;
  }   
- 
+ .inner_service_container article{
+    width: 80%;
+ }
  .menu{
     display: block;
     cursor: pointer;
