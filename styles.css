@@ -12,13 +12,13 @@ body{
     overflow-x: hidden;
 }
 :root{
-    --container-lg:85%;
+    --container-lg:100%;
     --container-md:90%;
     --container-sm:95%;
     --color-primary:#596CCE;
 }
 .btn{
-    padding:0.5rem 1.2rem;
+    padding:0.5rem 1.5rem;
     cursor: pointer;
     background-color: var(--color-primary);
     margin: 2rem 0;
@@ -27,12 +27,14 @@ body{
 .container{
     width: var(--container-lg);
     margin: auto;
+   
     
 }
 .header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 2rem;
 }
 .logo_img{
     border: 1px solid green;
@@ -78,6 +80,7 @@ a{
     
     display: flex;
     margin-top: 1rem;
+    padding: 0 2rem;
 }
 
 .left_home{
@@ -85,6 +88,7 @@ a{
     display: flex;
     align-items: center;
     height: 80vh; 
+    padding-left: 4rem;
 }
 .home_inner_wrapper{
  width: 60%;
@@ -130,7 +134,7 @@ a{
 }
 /* ====================SERVICE================= */
 .service{
-    margin: 2rem;
+    margin: auto;
 }
 .inner_service_container{
     display: flex;
@@ -154,6 +158,7 @@ a{
 .service_text{
     text-align: center;
     margin: 2rem;
+    font-size: 3rem;
 }
 .inner_service_container article h3{
     padding: 0.3rem;
@@ -163,6 +168,49 @@ a{
 }
 .activearticle{
     background-color: var(--color-primary);
+}
+/* ===============SOLUTION================ */
+.solution{
+    margin-top: 2rem;
+    /* border: solid; */
+    display: flex;
+    padding: 0 2rem;
+}
+.solution_img{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: relative;
+    left: 0px;
+    bottom:0px ;
+    z-index: -2;
+}
+.background_circle2{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    margin: auto;
+    background-color: rgba(170, 166, 180, 0.402);
+    opacity: 1;
+    position: relative;
+    top: 0px;
+    right: 0px;
+    z-index: -2;
+    opacity: 1;
+}
+.ordered_list{
+    list-style:circle;
+    counter-reset: list-counter;
+}
+.ordered_list li{
+    counter-increment: list-counter; 
+}
+.each_solution_container{
+    display: flex;
+}
+.each_solution_container li{
+    list-style: none;
 }
 @media screen and (max-width:1024px) {
     .inner_service_container article{
