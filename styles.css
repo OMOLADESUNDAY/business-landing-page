@@ -16,9 +16,10 @@ body{
     --container-md:90%;
     --container-sm:95%;
     --color-primary:#596CCE;
+    --color-secondary:#202e75;
 }
 .btn{
-    padding:0.5rem 1.5rem;
+    padding:0.8rem 1.5rem;
     cursor: pointer;
     background-color: var(--color-primary);
     margin: 2rem 0;
@@ -39,6 +40,10 @@ body{
 .logo_img{
     border: 1px solid green;
     /* border-radius: 50%; */
+   
+}
+.logo{
+    margin-left: 4rem;
 }
 .nav{
     display: flex;
@@ -175,6 +180,14 @@ a{
     /* border: solid; */
     display: flex;
     padding: 0 2rem;
+    justify-content: space-between;
+    gap: 2rem;
+    background-color: var(--color-secondary);
+    position: relative;
+    color: white;
+}
+.right_solution h1{
+    padding: 1rem;
 }
 .solution_img{
     width: 400px;
@@ -183,8 +196,8 @@ a{
     object-fit: cover;
     position: relative;
     left: 0px;
-    bottom:0px ;
-    z-index: -2;
+    bottom:-40px ;
+    z-index: 2;
 }
 .background_circle2{
     width: 400px;
@@ -195,22 +208,62 @@ a{
     opacity: 1;
     position: relative;
     top: 0px;
-    right: 0px;
-    z-index: -2;
+    left: -70px;
+    bottom: -10px;
+    z-index: 1;
     opacity: 1;
 }
-.ordered_list{
-    list-style:circle;
-    counter-reset: list-counter;
+.simple_solution_text{
+    width: 70%;
+    padding: 1rem;
 }
-.ordered_list li{
-    counter-increment: list-counter; 
+.each_solution_container_outer{
+    padding-left:1rem ;
+
 }
 .each_solution_container{
     display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin: 1rem 0;
+}
+.solution_btn2{
+    border:1px solid white;
+}
+.solution_btn{
+    background-color: #F5F5F5;
 }
 .each_solution_container li{
     list-style: none;
+}
+.each_solution_container div{
+    background-color: var(--color-primary);
+    width: 50px;
+    height: 50px;
+    border-radius:50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.agency{
+    display: flex;
+}
+.agency_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left_agency{
+    width: 50%;
+   padding-left:4rem ;
+   padding-top: 4rem;
+}
+.right_agency{
+    width: 50%;
+}
+.agency_text{
+    font-size: 3rem;
 }
 @media screen and (max-width:1024px) {
     .inner_service_container article{
