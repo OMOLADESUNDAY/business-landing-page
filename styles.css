@@ -177,7 +177,6 @@ a{
 /* ===============SOLUTION================ */
 .solution{
     margin-top: 2rem;
-    /* border: solid; */
     display: flex;
     padding: 0 2rem;
     justify-content: space-between;
@@ -186,6 +185,7 @@ a{
     position: relative;
     color: white;
 }
+
 .right_solution h1{
     padding: 1rem;
 }
@@ -265,9 +265,13 @@ a{
 .agency_text{
     font-size: 3rem;
 }
+
 @media screen and (max-width:1024px) {
     .inner_service_container article{
         width: 30%;
+     }
+     .right_solution h1{
+        margin-top:2rem;
      }
     .home_img{
         width: 400px;
@@ -280,11 +284,43 @@ a{
     .home_inner_wrapper{
         width: 100%;
     }
+    .left_solution{
+        display: none;
+    }
+    .right_solution h1{
+        text-align: center;
+    }
+    .right_solution p{
+        text-align: center;
+        width: 80%;
+        margin: auto;
+    }
+    .each_solution_container{
+        width: 80%;
+        margin: auto;
+        gap: 1rem;
+    
+    }
+    
+    .solution_btn_container{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+    }
+    .right_agency{
+        display: none;
+    }
+    .left_agency{
+        width: 80%;
+    }
 }
 @media screen and (max-width:769px) {
     .home_img{
         width: 350px;
         height: 350px;
+    }
+    .each_solution_container{
+        padding-top: 1rem;
     }
     .background_circle{
         width: 350px;
@@ -302,6 +338,20 @@ a{
      .inner_service_container article{
         width: 40%;
      }
+     .each_solution_container{
+        width: 100%;
+        margin: auto;
+        gap: 1rem;
+      
+    }
+    .each_solution_container div{
+        width: 60px;
+        height: 60px;
+    }
+   
+    .left_agency{
+        width: 80%;
+    }
 }
 @media screen and (max-width:540px) {
  .hambuger_container{
@@ -340,5 +390,8 @@ a{
  .links{
     color: antiquewhite;
  }
- 
+ .left_agency{
+    width: 100%;
+    
+ }
 }
