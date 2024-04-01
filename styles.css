@@ -265,6 +265,10 @@ a{
 .agency_text{
     font-size: 3rem;
 }
+.testimonies{
+    position: relative;
+    border: solid;
+}
 
 @media screen and (max-width:1024px) {
     .inner_service_container article{
