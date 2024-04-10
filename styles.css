@@ -269,6 +269,67 @@ a{
     position: relative;
     border: solid;
 }
+.left_arr_btn{
+    position: absolute;
+    left: 10px;
+    top: 50%;
+}
+.right_arr_btn{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    
+}
+
+
+
+
+.rating {
+    display: flex;
+    flex-direction: row-reverse; /* Reverse the order of stars */
+  }
+  
+  .rating input {
+    display: none; /* Hide the radio inputs */
+  }
+  
+  .rating label {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    background-image: url('./images/images.png'); /* Use your star image */
+    background-size: cover;
+  }
+  
+  /* .rating input:checked ~ label {
+    background-image: url('./images/images.png'); 
+  } */
+.testimonial_img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.testimony{
+    width: 30%;
+    
+    border: solid;
+}
+.testimony_container{
+    display: flex;
+    overflow-x: hidden;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.top_testimony{
+    display: flex;
+}
+
+
+
+
+
+
 
 @media screen and (max-width:1024px) {
     .inner_service_container article{
